@@ -1,0 +1,154 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 21px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:hover {
+  background-color: #828fa3;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #635fc7;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:hover {
+  background-color: #9290d1;
+
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.side-bar-container {
+  background-color: #fff;
+  width: 280px;
+  margin: 0;
+  height: 100vh;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  bottom: 0;
+}
+
+.nums-of-subject-text {
+  color: #7794bd;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+}
+
+.side-bar-container > div:first-child > p {
+  margin: 20px;
+}
+
+.side-bar-subject-container {
+  padding-right: 20px;
+}
+
+.side-bar-subject-container > div {
+  display: flex;
+  padding: 25px;
+  transition: 0.3s;
+  height: 45px;
+  border-radius: 0 100px 100px 0;
+  align-items: center;
+  cursor: pointer;
+}
+
+.side-bar-subject-container > div > img {
+  width: 16px;
+  height: 16px;
+}
+
+.side-bar-subject-container > div:hover > p {
+  color: #635fc7;
+}
+
+.side-bar-subject-container > div:hover {
+  background: rgba(99, 95, 199, 0.1);
+  border-radius: 0 100px 100px 0;
+}
+
+.bg-Blue {
+  background-color: #635fc7;
+}
+
+.subject-title {
+  color: #828fa3;
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
+.text-white {
+  color: white;
+}
+
+.switch-dark-mode-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f4f7fd;
+  width: 240px;
+  height: 50px;
+  margin: 16px 16px 0;
+  padding: 14px 40px 14px 40px;
+  border-radius: 5px;
+}
+
+.hide-side-bar-container {
+  display: flex;
+  padding: 18px 18px 18px 25px;
+  cursor: pointer;
+  margin: 10px 20px 0 0;
+}
+
+.hide-side-bar-container:hover {
+  background: rgba(99, 95, 199, 0.1);
+  border-radius: 0 100px 100px 0;
+}

@@ -1,0 +1,35 @@
+.task {
+  width: 280px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(54, 78, 126, 0.102);
+  padding: 23px 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.nums-of-subtask {
+  color: #828fa3;
+  margin-top: 8px;
+}
+
+.col-name {
+  color: #828fa3;
+  margin-bottom: 24px;
+}
+
+.add-new-col {
+  margin-top: 39px;
+  background-color: #eaf0fa;
+  width: 280px;
+  color: #828fa3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.task:hover {
+  color: #635fc7;
+}

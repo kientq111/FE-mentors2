@@ -1,0 +1,9 @@
+.board {
+  background-color: #f4f7fd;
+  display: flex;
+  overflow-x: scroll;
+  gap: 24px;
+  padding: 24px 16px;
+  margin-top: 80px;
+  margin-left: 280px;
+}
