@@ -1,6 +1,6 @@
 .task {
   width: 280px;
-  background-color: #fff;
+  background-color: var(--color-background);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(54, 78, 126, 0.102);
   padding: 23px 16px;
@@ -20,7 +20,7 @@
 
 .add-new-col {
   margin-top: 39px;
-  background-color: #eaf0fa;
+  background-color: var(--secondary-bg-color);
   width: 280px;
   color: #828fa3;
   display: flex;

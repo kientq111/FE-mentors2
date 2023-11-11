@@ -1,5 +1,5 @@
 .board {
-  background-color: #f4f7fd;
+  background-color: var(--color-board);
   display: flex;
   overflow-x: scroll;
   gap: 24px;

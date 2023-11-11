@@ -49,7 +49,6 @@ input:focus + .slider {
 
 input:checked + .slider:hover {
   background-color: #9290d1;
-
 }
 
 input:checked + .slider:before {
@@ -67,14 +66,13 @@ input:checked + .slider:before {
 }
 
 .side-bar-container {
-  background-color: #fff;
+  background-color: var(--color-background);
   width: 280px;
   margin: 0;
   height: 100vh;
   position: fixed;
   top: 80px;
   left: 0;
-  bottom: 0;
 }
 
 .nums-of-subject-text {
@@ -89,6 +87,8 @@ input:checked + .slider:before {
 
 .side-bar-subject-container {
   padding-right: 20px;
+  overflow: scroll;
+  height: 500px;
 }
 
 .side-bar-subject-container > div {
@@ -133,7 +133,7 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #f4f7fd;
+  background-color: var(--primary-bg-color);
   width: 240px;
   height: 50px;
   margin: 16px 16px 0;

@@ -1,6 +1,10 @@
 import IconBoard from "../../assets/icon-board.svg";
+import { EDIT_BOARD } from "../../constants/ModalConstants";
+import { useTheme } from "../../Providers/themeContext";
 
 const SideBarSubject = () => {
+  const { openCloseModalHandle } = useTheme();
+
   return (
     <div className="side-bar-subject-container">
       <div>
@@ -15,7 +19,7 @@ const SideBarSubject = () => {
         <img src={IconBoard} alt="iconBoard" />
         <p className="text-XL subject-title">Roadmap</p>
       </div>
-      <div>
+      <div onClick={() => openCloseModalHandle(EDIT_BOARD)}>
         <img src={IconBoard} alt="iconBoard" />
         <p className="text-XL subject-title" style={{ color: "#635fc7" }}>
           +Create New Board

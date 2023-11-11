@@ -9,6 +9,13 @@ body,
 body {
   margin: 0;
   font-family: "Plus Jakarta Sans", sans-serif;
+  --color-text: white;
+  --color-background: white;
+  --color-board: #f4f7fd;
+  --primary-bg-color: #eaf0fa;
+  --secondary-bg-color: #eaf0fa;
+  --tertiary-bg-color: rgb(223, 223, 235);
+  --box-shadow-color: rgba(29, 27, 27, 0.2);
 }
 
 * {
@@ -109,11 +116,10 @@ option {
   width: 170px;
   height: 100px;
   position: absolute;
-  background: white;
+  background: var(--color-background);
   right: 30px;
   top: 70px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  box-shadow: 0px 5px 10px 0px var(--box-shadow-color);
   border-radius: 4px;
   padding: 20px;
 }
@@ -121,4 +127,23 @@ option {
 .dropdown-panel > p {
   cursor: pointer;
 }
+
+body.dark {
+  --color-text: black;
+  --color-background: #2b2c37;
+  --color-board: #20212c;
+  --primary-bg-color: #20212c;
+  --secondary-bg-color: #2b2c37;
+  --tertiary-bg-color: #20212c;
+  --box-shadow-color: rgba(230, 223, 223, 0.1);
+}
+
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}
+
 

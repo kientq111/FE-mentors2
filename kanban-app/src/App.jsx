@@ -1,15 +1,14 @@
 import "./styles/Typography.css";
 import BoardTask from "./components/boardTask/BoardTaskView";
 import Header from "./components/header/Header";
-import ModalContainer from "./modals/ModalContainer";
+import { ThemeProvider } from "./Providers/themeContext";
 
 function App() {
   return (
-    <div>
+    <ThemeProvider>
       <Header />
       <BoardTask />
-      {/* <ModalContainer /> */}
-    </div>
+    </ThemeProvider>
   );
 }
 
